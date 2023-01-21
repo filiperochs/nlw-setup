@@ -11,6 +11,9 @@ const secondHabitCreationDate = new Date('2023-01-03T03:00:00.000')
 const thirdHabitId = 'fa1a1bcf-3d87-4626-8c0d-d7fd1255ac00'
 const thirdHabitCreationDate = new Date('2023-01-08T03:00:00.000')
 
+const fourthHabitId = '1b9d60f2-ecf7-4858-9597-81471c8ad3e9'
+const fourthHabitCreationDate = new Date('2023-01-20T03:00:00.000')
+
 async function run() {
   await prisma.dayHabit.deleteMany()
   await prisma.habitWeekDays.deleteMany()
@@ -43,9 +46,9 @@ async function run() {
         created_at: secondHabitCreationDate,
         weekDays: {
           create: [
-            { week_day: 3 },
             { week_day: 4 },
             { week_day: 5 },
+            { week_day: 6 },
           ]
         }
       }
@@ -63,6 +66,25 @@ async function run() {
             { week_day: 3 },
             { week_day: 4 },
             { week_day: 5 },
+          ]
+        }
+      }
+    }),
+
+    prisma.habit.create({
+      data: {
+        id: fourthHabitId,
+        title: 'Cuidar das plantas',
+        created_at: fourthHabitCreationDate,
+        weekDays: {
+          create: [
+            { week_day: 0 },
+            { week_day: 1 },
+            { week_day: 2 },
+            { week_day: 3 },
+            { week_day: 4 },
+            { week_day: 5 },
+            { week_day: 6 },
           ]
         }
       }

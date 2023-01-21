@@ -5,7 +5,7 @@ Construção de um projeto inédito, que me ajudou a aprender novas tecnologias 
 
 Proporcionado pela [Rocketseat](https://www.rocketseat.com.br).
 
-# Projeto
+## Projeto
 
 ### Sobre
 
@@ -52,7 +52,13 @@ Há 3 diretórios nesse repositório disposto do seguinte:
   [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) - Biblioteca de efeitos de transição e animação.
 </details>
 
-### Considerações
+## Lista de próximas implementações
+
+- [ ] Autenticação
+- [ ] Notificação Push / Service Workers
+- [ ] Perfil público
+
+## Considerações
 
 É possível encontrar como instalar e rodar os projetos separadamente dentro de cada diretório em seu README.md
 
