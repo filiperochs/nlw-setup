@@ -15,8 +15,8 @@ O projeto tem a ideia do usuário criar hábitos para o seu dia-a-dia, acompanha
 
 Há 3 diretórios nesse repositório disposto do seguinte:
 
-`/mobile` é o diretório onde está o projeto mobile.
-`/server` é o diretório onde está o projeto do back-end.
+`/mobile` é o diretório onde está o projeto mobile. <br />
+`/server` é o diretório onde está o projeto do back-end. <br />
 `/web` é o diretório onde está o projeto do front-end.
 
 ### Ferramentas utilizadas
