@@ -1,7 +1,7 @@
 import Fastify from 'fastify'
-import env from 'dotenv'
 import cors from '@fastify/cors'
-import { appRoutes } from './routes'
+import { routes } from './routes'
+import env from 'dotenv'
 
 env.config({
   path: '.env'
@@ -9,12 +9,17 @@ env.config({
 
 const PORT = Number(process.env.PORT || 3333)
 
+// fastify
+
 const app = Fastify({
   logger: true
 })
 
 app.register(cors)
-app.register(appRoutes)
+
+routes.forEach(route => {
+  app.route(route)
+})
 
 app.listen({
   port: PORT,
